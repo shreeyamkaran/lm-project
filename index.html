@@ -46,7 +46,6 @@
                         <li class="nav-item"><a class="nav-link" href="#how-are-concepts-represented">How are concepts represented?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#why-concept-id">Why Concept ID?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#which-items-are-not-present-in-the-concept-row">Which items are not presented in the concept row?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#which-items-are-not-present-in-the-concept-row">Which items are not presented in the concept row?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#entity">Entity</a></li>
                         <li class="nav-item"><a class="nav-link" href="#pronominal-reference-to-an-entity">Pronominal Reference to an Entity</a></li>
                         <li class="nav-item"><a class="nav-link" href="#personal-pronoun">Personal pronoun</a></li>
@@ -477,10 +476,10 @@
                     <td><a style="text-decoration: none; color: #000;" href="#sample-usr">Sample USR</a></td>
                 </tr>
             </table>
-            <p>USR: A brief outline</p>
+            <h5 class="text-info">USR: A brief outline</h5>
             <p>Universal Semantic Representation (USR) is a meaning representation that models Indian Grammatical Tradition (IGT). Meaning (or thought) is there in the mind of the speaker (author) and while speaking (writing), (s)he makes use of language (or linguistic expressions) to express his/her thought. Thus a discourse (text) represents the speaker's thought.</p>
             <p>This guideline is created to help annotators to make USRs of the written discourse. The objective is to generate multiple natural languages from these USRs using Natural Language Generators.</p>
-            <p id="motivation-of-usr">Motivation of USR</p>
+            <h5 class="text-info" id="motivation-of-usr">Motivation of USR</h5>
             <p>Written text expresses the speaker's intention of how (s)he wants to depict a situation. A situation can be seen as an event with various participants involved in that event and also various associated events either causing or resulting or associating with the main event. For example, let us take a situation where the main event is speaking. Two participants involved are Ram and Sita in the role of speakers. The location of the event is bus stop. The target person speaking is the brother of Ram and Sita. When the speaker wants to talk about this situation (s)he has to choose a tense and aspect. For example, the chosen time is past perfective in this case. This very basic situation (which we can call 'propositional information') can be expressed in Hindi as</p>
             <p class="text-center">(1) rāma aura sitā ne basa aḍḍe para bhāī ke sātha bāta kī.</p>
             <p>Now, the speaker wants to add some more situational information on this basic propositional information. They are the following: the brother is younger to Ram and Sita. The speaker wants to negate the whole situation. In Hindi, the chosen linguistic elements are negation marker nahīṃ 'not'. Moreover, the speaker wants to add the information of certainty to the negation of the above situation. However (s)he wants to leave open the possibility of the agents' speaking to somebody else in the bus stop. Such intention of the speaker can be expressed through the discourse particle to in Hindi. Thus the sexemplifyentence generated in different languages including Hindi is as below-</p>
@@ -533,7 +532,7 @@
             <p class="text-center">(2) Hindi: kyoṃki usa dina unakā bhāī śahara meṃ thā hī nahīṃ<br>Bangla: kāran sedina oder bhāi sahar-e chi-lo-i nā</p>
             <p>kyoṃki 'because' is a discourse connective marker that logically connects (1) and (2) by justifying (1) through (2). usa- and una- (pl of usa-) are anaphoric pronouns. usa dina refers to the same day when the event took place. una in unake bhāī refers to Ram and Sita. These anaphoric expressions are the mechanism for maintaining the cohesiveness in the story. The discourse particle hī again like to in (1) add extra-propositional meaning which actually conveys the speaker's view or perspective.</p>
             <p>USR attempts to capture all this information in a human-friendly yet machine tractable representation.</p>
-            <p id="format-of-usr">Format of USR</p>
+            <h5 class="text-info" id="format-of-usr">Format of USR</h5>
             <p>The meaning is represented in 11 rows in csv (comma (,) separated value) format. This document guides the annotators to annotate each row. The 11 rows are:</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 2. Rows of USR</caption>
@@ -582,7 +581,7 @@
                     <td>Construction</td>
                 </tr>
             </table>
-            <p id="sentence-simplification">Sentence Simplification</p>
+            <h5 class="text-info" id="sentence-simplification">Sentence Simplification</h5>
             <p>Since USR annotation of complex sentences is difficult and automated USR generation for complex sentences is a challenge as observed through several experiments, we have decided to first split complex sentences into discourse unit without losing information. Some complex sentences are not splitted as splitting them will make the discourse less coherent. Following are the strategies of sentence simplification</p>
             <ul>
                 <li>In general, simplified segments will be a discourse unit which contains a finite verb.</li>
@@ -746,7 +745,7 @@
             </div>
             <p>The annotation of discourse connective is presented in the Discourse Connective Relation section to ensure no loss of information.</p>
             <p>Different Rows of USR</p>
-            <p id="row-1">Row 1: Original Sentence</p>
+            <h5 class="text-info" id="row-1">Row 1: Original Sentence</h5>
             <ul>
                 <li>All the sentences have a unique ID [LanguageName_NameoftheBook_ChapterID_SentenceID] which is followed throughout for maintaining the reference. No space will be given between chapter/ sentence and number. However, language name, book name, chapter and sentence ID will be separated by '_'.</li>
                 <li>The 1st row is commented with a '#' symbol.</li>
@@ -763,7 +762,7 @@
                     <td>Row 1: # राम बस अड्डे पर एक पुराने दोस्त के साथ ही बात कर रहा था।<br>Row 1: # rāma basa aḍḍe para eka purāne dosta ke sātha hī bāta kara rahā thā.</td>
                 </tr>
             </table>
-            <p id="sub-sentence-identification">Sub-sentence Identification</p>
+            <h5 class="text-info" id="sub-sentence-identification">Sub-sentence Identification</h5>
             <p>If the sentence is a title, a section heading or a term combined with its definition, we encode the information in the sentence ID.<br><b>TITLE:</b> It occurs only once in the discourse, i.e.-the title of the chapter.<br>The sentence type will be <b>TITLE:</b></p>
             <table class="table table-bordered table-sm">
                 <tr>
@@ -828,9 +827,9 @@
                     <td># mahāsāgarīya jaloṃ kā āpasa meṃ milanā</td>
                 </tr>
             </table>
-            <p id="row-2">Row 2: Concepts</p>
+            <h5 class="text-info" id="row-2">Row 2: Concepts</h5>
             <p>Concepts are the semantic constructs. Each entry to the concept row is an unambiguous representation of a concept.</p>
-            <p id="what-to-present-in-the-concept-row">What to present in the concept row?</p>
+            <h5 class="text-info" id="what-to-present-in-the-concept-row">What to present in the concept row?</h5>
             <ul>
                 <li>Entity (physical and abstract): laḍakā 'boy', pariṇāma 'result'</li>
                 <li>Event : bola 'speak', nāca 'dance'</li>
@@ -921,9 +920,9 @@
                     <li>rAma, <b>eka_2</b>, xoswa_1, mila_1-yA_1</li>
                 </ul>
             </ul>
-            <p id="how-are-concepts-represented">How are concepts represented?</p>
+            <h5 class="text-info" id="how-are-concepts-represented">How are concepts represented?</h5>
             <p>The format : Root_Concept_ID</p>
-            <p id="why-concept-id">Why Concept ID?</p>
+            <h5 class="text-info" id="why-concept-id">Why Concept ID?</h5>
             <p>Concepts could be ambiguous in nature. For example, the lexeme paḍha expresses two concepts: 'study' (as in The boy studies in 7th standard) and 'read' ('the boy reads a book'). To resolve this kind of ambiguity at the conceptual level, every concept gets a unique concept ID in the concept dictionary. Each unique concept is mapped with an appropriate equivalent from other languages. They are listed in the concept dictionary. For entries in the concept dictionary, see here.</p>
             <p>Concept dictionary contains concepts in wx-format which is mapped with Roman Indic script here.</p>
             <table class="table table-bordered table-sm">
@@ -1044,7 +1043,7 @@
             </table>
             <p><b>Note:</b> ciwra saMKyA 2.1 will be presented as two concepts as following-</p>
             <p>ciwra_1+saMKyA_1 as one concept and 2.1 as another concept with 'rs' relation</p>
-            <p id="which-items-are-not-present-in-the-concept-row">Which items are not presented in the concept row?</p>
+            <h5 class="text-info" id="which-items-are-not-present-in-the-concept-row">Which items are not presented in the concept row?</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 5. What not to represent in Concept row, i.e. row 2</caption>
                 <tr>
@@ -1089,31 +1088,31 @@
                 </tr>
             </table>
             <p>We will discuss below the representation of different kinds of concepts.</p>
-            <p id="entity">Entity</p>
+            <h5 class="text-info" id="entity">Entity</h5>
             <p>An entity can be a simple item or it can be a composite idea. For example, kitāba 'book' refers to some singular item in the real world whereas 'textbook' is a composite idea which refers to “a book that contains detailed information about a subject for people who are studying that subject” [Cambridge Dictionary]. 'History textbook' is more composite in nature that refers to a textbook about History. 'Ancient History textbook' further specifies the period of history.</p>
             <p>A composite idea can be expressed as a multi-word expression (MWE) in many languages. One such MWE is Noun Compound (NC).</p>
             <p>An NC is made up of a head noun and one or more noun modifiers. In USR, they are joined with '+'.</p>
             <p class="text-center">basa aḍḍā -> basa_1+aḍḍā_1</p>
             <p>If an NC occurs with - (hyphen) then give the concept ID at the end of the NC e.g. bhū-kṣetraphala_1. See Appendix-3 for further details.</p>
-            <p id="pronominal-reference-to-an-entity">Pronominal Reference to an Entity</p>
+            <h5 class="text-info" id="pronominal-reference-to-an-entity">Pronominal Reference to an Entity</h5>
             <p>Resolution of pronominal expression (i.e. determining which entity it refers to) happens at the discourse level through co-referencing (For further discussion see Pronominal co-reference) and deictic pronouns through annotating deicticity in the Speaker's view row. In the concept row, following label is annotated:</p>
-            <p id="personal-pronoun">Personal Pronoun</p>
+            <h5 class="text-info" id="personal-pronoun">Personal Pronoun</h5>
             <p><b>1st person-</b> 'speaker'<br><b>2nd person-</b> 'addressee'</p>
-            <p id="how-to-distinguish-upon-tum-tu-apna">How to distinguish among tuma, tū and āpa (the three forms of 2nd person pronoun)?</p>
+            <h5 class="text-info" id="how-to-distinguish-upon-tum-tu-apna">How to distinguish among tuma, tū and āpa (the three forms of 2nd person pronoun)?</h5>
             <p>In concept row, all three forms of 2nd person pronoun are marked as addressee. The distinction is encoded in the Speaker's view row under Respect and Informal information Section.</p>
-            <p id="wyax">wyax</p>
+            <h5 class="text-info" id="wyax">wyax</h5>
             <p>3rd Person pronominals are conceptualized as wyax in concept row. wyax represents all such variables which have the form of any third person pronoun and either have trace in the text or in the discourse.</p>
-            <p id="how-to-distinguish-between-proximal-and-distal-form-of-wyax">How to distinguish between proximal and distal form of wyax?</p>
+            <h5 class="text-info" id="how-to-distinguish-between-proximal-and-distal-form-of-wyax">How to distinguish between proximal and distal form of wyax?</h5>
             <p>wyax can have two separate forms, proximal and distal (yaha and vaha) and in some languages, there is another additional form of wyax, that is far-distal. The distinction is encoded in the Speaker's view row under Proximal and Distal Section.</p>
-            <p id="reciprocal-pronoun">Reciprocal Pronouns</p>
+            <h5 class="text-info" id="reciprocal-pronoun">Reciprocal Pronouns</h5>
             <p>Reciprocal pronouns, which express mutual relationship, would be treated as a compound word. Such as- each-other. In Hindi, eka dūsare is an example of a reciprocal pronoun.</p>
-            <p id="reflexive-pronoun">Reflexive Pronoun</p>
+            <h5 class="text-info" id="reflexive-pronoun">Reflexive Pronoun</h5>
             <p>Reflexive pronouns are pronouns which refer back to the nominal itself, such as- myself, himself, herself etc. In Hindi, khuda, apanā are examples of reflexive pronouns.</p>
-            <p id="interrogative-pronoun">Interrogative Pronoun</p>
+            <h5 class="text-info" id="interrogative-pronoun">Interrogative Pronoun</h5>
             <p>All interrogative pronouns are conceptualized as kim in concept row. See here for Hindi interrogative pronoun list.</p>
-            <p id="relative-pronoun">Relative Pronoun</p>
+            <h5 class="text-info" id="relative-pronoun">Relative Pronoun</h5>
             <p>All relative pronouns are represented as yax in the concept row. However, relative pronouns which function as a discourse connective are not represented in the concept row.</p>
-            <p class="mb-0" id="example-for-all-pronouns">Example for all Pronouns</p>
+            <h5 class="text-info" class="mb-0" id="example-for-all-pronouns">Example for all Pronouns</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 6. Representation of different pronominal concepts</caption>
                 <tr>
@@ -1197,8 +1196,8 @@
                     <td>jalamagna+ho_1-gayā_1</td>
                 </tr>
             </table>
-            <p id="events">Events</p>
-            <p id="concept-for-verb-forms">Concepts for verb forms consist of root and TAM info separated by '-'.</p>
+            <h5 class="text-info" id="events">Events</h5>
+            <h5 class="text-info" id="concept-for-verb-forms">Concepts for verb forms consist of root and TAM info separated by '-'.</h5>
             <ul>
                 <li>Verbs can be stative or action verbs.</li>
                 <li>A complex predicate consists of a kriyāmūla and a kriyā They are joined by '+' and the whole predicate consists of kriyāmūla and kriyā gets a concept label after the kriyā.</li>
@@ -1262,7 +1261,7 @@
                     <td>ja_1-yā_1</td>
                 </tr>
             </table>
-            <p id="tam">Tense, Aspect, Modality (TAM)</p>
+            <h5 class="text-info" id="tam">Tense, Aspect, Modality (TAM)</h5>
             <p>Like content words, Tense-Aspect-Mood markers (henceforth, TAM string) can also be polysemous in nature. That is why they are also represented in the TAM concept dictionary with unique ids (See Appendix-5). A verb can be of tinganta (तिङ्न्त​/finite) or kridanta (कृदन्त/non-finite, infinitival, verbal noun, participial) form.</p>
             <p><b>Note:</b></p>
             <ul>
@@ -1273,7 +1272,7 @@
                 <li>For imperative sentences, TAM will be by default, 'o'.<br>tū ghara jā,<br>addressee, jā_1-o_1.</li>
                 <li>For the correct Hindi TAM see here.</li>
             </ul>
-            <p id="modifiers-of-entities">Modifiers of Entities</p>
+            <h5 class="text-info" id="modifiers-of-entities">Modifiers of Entities</h5>
             <p>Adjectives or the modifier of entities could be an adjective, a quantifier or a cardinal/ ordinal number or an intensifier. They are represented in bare form and get concept id.</p>
             <p class="mb-0">Some relations are listed below:</p>
             <table class="table table-bordered table-sm">
@@ -1374,7 +1373,7 @@
                     <td colspan="2">hai_1-pres</td>
                 </tr>
             </table>
-            <p id="modifiers-of-events">Modifiers of Events</p>
+            <h5 class="text-info" id="modifiers-of-events">Modifiers of Events</h5>
             <p>Adverbials are the modifier of events which provide information on the manner of adverbs, negations etc. We represent manner adverb and negation in concept row with appropriate concept ID.</p>
             <p class="mb-0">Examples of modifiers of events</p>
             <table class="table table-bordered table-sm">
@@ -1402,7 +1401,7 @@
             </table>
             <p><b>Note:</b></p>
             <p>Check the Concept dictionary for the correct concept label ID.</p>
-            <p id="row-3">Row 3: Index for the Concepts</p>
+            <h5 class="text-info" id="row-3">Row 3: Index for the Concepts</h5>
             <p>This row in USR gives an indexing where each concept (i.e. the prakrti) is indexed according to the place of occurrences, represented in the concept row. This indexing helps to mark the head-dependency, co-referencing and compositionality among members of concepts which we will discuss in the Dependency row, Discourse elements row and Construction row.</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 11. Representation of Index row, i.e.-row 3</caption>
@@ -1451,7 +1450,7 @@
                     <td colspan="3">4</td>
                 </tr>
             </table>
-            <p id="row-4">Row 4: Semantic Categories of Nouns</p>
+            <h5 class="text-info" id="row-4">Row 4: Semantic Categories of Nouns</h5>
             <p>The Semantic category row specifies the semantic category of a concept.</p>
             <ul>
                 <li>Currently, four generic named entity categories are being annotated, namely- per(son), org(anisation), place and ne. ne is the underspecified tag used for all such named entities which do not fall into the category of either person, place or organization. Apart from that, we mark Time, number, and animacy categories.</li>
@@ -1565,7 +1564,7 @@
                     <td>sītā baccoṃ ko phala detī hai 'Sita gives fruit to the children.'</td>
                 </tr>
             </table>
-            <p class="mb-0" id="example-of-semantic-category-row">Example of Semantic Category Row</p>
+            <h5 class="text-info" class="mb-0" id="example-of-semantic-category-row">Example of Semantic Category Row</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 13. Representation of Semantic Category Row</caption>
                 <tr>
@@ -1600,7 +1599,7 @@
                     <td>anim</td>
                 </tr>
             </table>
-            <p id="row-5">Row 5: Morpho-Semantic Information</p>
+            <h5 class="text-info" id="row-5">Row 5: Morpho-Semantic Information</h5>
             <p>At the Morpho-Semantic row, the speaker's vivakṣā (intention) to compare, causativize and adjectivize are encoded which, during language generation, are mostly represented in terms of a derived form of the root word that denotes the given concept.</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 14. Contents of Morpho-Semantic Category Row</caption>
@@ -1645,7 +1644,7 @@
                     <td>māṃ ne rāma se bacce ko khānā khilavāyā<br>'The mother fed the baby by Rama.'</td>
                 </tr>
             </table>
-            <p id="general-information">General Information</p>
+            <h5 class="text-info" id="general-information">General Information</h5>
             <ul>
                 <li>We only mark the plurality information by 'pl'.</li>
                 <li>Numbers are marked only for countable nouns. For all other kinds of nouns, numbers information can be left blank.</li>
@@ -1718,7 +1717,7 @@
                     <td>causative</td>
                 </tr>
             </table>
-            <p id="row-6">Row 6: Dependency Relation</p>
+            <h5 class="text-info" id="row-6">Row 6: Dependency Relation</h5>
             <p>In this row we mark the relation between head and dependent in following way-<br>Index of the head: the relation of dependent with the head<br>Here, the relation means "what the dependent is to the head". So, if we get a relation as 2:k2, this means '2' is the index of head and 'karma' or 'k2' is the name of the relation of the dependent with the head or dependent is k2 of head.<br>Two types of head-dependency relations are captured in this row. They are-</p>
             <ul>
                 <li>kāraka relation between verbs and its dependent nouns</li>
@@ -1736,7 +1735,7 @@
                 <li>The relation between the viśeṣya or head and its dependents are specified in this row as the index of the head : relation tag in the column of the dependent.</li>
                 <li>The convention followed in this document is to mark the dependent in bold and underline the head.</li>
             </ul>
-            <p id="karaka-relations">kāraka relations</p>
+            <h5 class="text-info" id="karaka-relations">kāraka relations</h5>
             <ul><li>All kāraka relations start with 'k' and are followed by a numerical</li></ul>
             <p>A list of six main kāraka relations given below:</p>
             <table class="table table-bordered table-sm">
@@ -1797,7 +1796,7 @@
                 </tr>
             </table>
             <p><b>Note-</b> Although, karta/ karma of Complex Predicate gets genitive relation, but the dependency relation is k1/k2. See Complex Predicate for details</p>
-            <p class="mb-0" id="exemplify-other-karaka-relations">exemplifyOther kāraka relations</p>
+            <h5 class="text-info" class="mb-0" id="exemplify-other-karaka-relations">Exemplify other kāraka relations</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 17. Other kāraka relations</caption>
                 <tr>
@@ -1855,7 +1854,7 @@
                     <td>rāma ke anusāra sītā ghara para nahīṃ hai<br>'According to Ram Sita is not at home.'</td>
                 </tr>
             </table>
-            <p id="relations-associated-with-karaka">Relations associated with kāraka</p>
+            <h5 class="text-info" id="relations-associated-with-karaka">Relations associated with kāraka</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 18.Relations associated with kāraka</caption>
                 <tr>
@@ -1902,9 +1901,9 @@
                     <td>rāma mohana ko buddhimāna samajhatā hai<br>'Ram considers Mohan to be intelligent.'</td>
                 </tr>
             </table>
-            <p id="karaketara-relation">kāraketara relation</p>
+            <h5 class="text-info" id="karaketara-relation">kāraketara relation</h5>
             <p>Apart from karaka relations, the head of the sentence can have some non-kāraka relations with its dependents. They are further divided into different categories according to the specification of the relations as discussed below-</p>
-            <p id="samanadhikarana">samānādhikaraṇa</p>
+            <h5 class="text-info" id="samanadhikarana">samānādhikaraṇa</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 19. samānādhikaraṇa</caption>
                 <tr>
@@ -1932,7 +1931,7 @@
                     <td>maine jangal meṃ eka bhāgate hue śera ko dekhā<br>'I saw a running lion in the jungle.'</td>
                 </tr>
             </table>
-            <p id="bhavalakshan">bhāvalakṣaṇa:</p>
+            <h5 class="text-info" id="bhavalakshan">bhāvalakṣaṇa:</h5>
             <p>The nominal form of the dependent verb (VN) plays the role of a referent with respect to which the time of the main event (VM) is specified.</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 20. bhāvalakṣaṇa</caption>
@@ -1961,7 +1960,7 @@
                     <td>sūrya ugane se pahale nahāo<br>'Bathe before the sun sets.'</td>
                 </tr>
             </table>
-            <p id="kalavaci">kālavācī</p>
+            <h5 class="text-info" id="kalavaci">kālavācī</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 21. kālavācī</caption>
                 <tr>
@@ -1983,7 +1982,7 @@
                     <td>rāma sote hue kharrāṭe bharatā hai<br>'Ram snores while sleeping.'</td>
                 </tr>
             </table>
-            <p id="spatio-temporal-information">Spatio-temporal Information</p>
+            <h5 class="text-info" id="spatio-temporal-information">Spatio-temporal Information</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 22. Spatio-temporal information</caption>
                 <tr>
@@ -2005,7 +2004,7 @@
                     <td>7 se pahale rāma ghara āyā<br>'Ram came home before 7 o'clock.'</td>
                 </tr>
             </table>
-            <p id="intra-sentential-sangati">Intra-sentential sangati</p>
+            <h5 class="text-info" id="intra-sentential-sangati">Intra-sentential sangati</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 23. Intra-sentential sangati</caption>
                 <tr>
@@ -2033,7 +2032,7 @@
                     <td>kucha vastuoṃ kā nirmāṇa prakṛti ne kiyā hai jaise parvata nadiyāṁ prāṇī<br>'Some things are made by nature like rivers, trees and animals.'</td>
                 </tr>
             </table>
-            <p id="genitive-or-possessive-relation">Genitive or Possessive relation between two entities</p>
+            <h5 class="text-info" id="genitive-or-possessive-relation">Genitive or Possessive relation between two entities</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 24. Genitive or Possessive relation between two entities</caption>
                 <tr>
@@ -2067,7 +2066,7 @@
                     <td>rāma ke do beṭe haiṃ<br>'Ram has two sons.'</td>
                 </tr>
             </table>
-            <p id="sadrisya-vibhajan-and-nirdharana">Sādrisya, vibhājana and nirdhāraṇa</p>
+            <h5 class="text-info" id="sadrisya-vibhajan-and-nirdharana">Sādrisya, vibhājana and nirdhāraṇa</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 25. Sādrisya, vibhājana and nirdhāraṇa</caption>
                 <tr>
@@ -2095,7 +2094,7 @@
                     <td>gāyo meṃ kālī gāi sabase jyādā dūdha detī he.<br>'Among cows, black cows give the most milk.'</td>
                 </tr>
             </table>
-            <p id="other-karakatera-relation">Other kārakatera relation</p>
+            <h5 class="text-info" id="other-karakatera-relation">Other kārakatera relation</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 26. Other kārakatera relation</caption>
                 <tr>
@@ -2161,7 +2160,7 @@
             </table>
             <p><b>Note</b></p>
             <p>In the context of the relation path, the term "relation path tag" will be used there to signify "via,"or "through" or in other words, "से होकर" in Hindi. The sentence is constructed in a manner that conveys this meaning. Here, "से होकर" is taken as a post position. It is important to note that, in this usage, "से होकर," which is typically a verb, is employed in particular semantics as a post position.</p>
-            <p id="modifier-and-modified-relations">Modifier and modified relations</p>
+            <h5 class="text-info" id="modifier-and-modified-relations">Modifier and modified relations</h5>
             <table class="table table-bordered table-sm">
                 <caption>Table 27. Modifier and modified relations</caption>
                 <tr>
@@ -2213,7 +2212,7 @@
                     <td>pṛthvī para tīna hajāra se kama vibhinna khanija haiṃ<br>'There are less than three thousand different minerals on this earth.'</td>
                 </tr>
             </table>
-            <p id="different-measurement-relations">Different Measurement relations</p>
+            <h5 class="text-info" id="different-measurement-relations">Different Measurement relations</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Relations</th>
@@ -2246,14 +2245,14 @@
                     <td>rāma hara 12 ghaṃṭe meṃ do bāra khātā hai<br>'Ram eats twice in every 12 hours.'</td>
                 </tr>
             </table>
-            <p id="row-7">Row 7: Discourse Elements</p>
+            <h5 class="text-info" id="row-7">Row 7: Discourse Elements</h5>
             <p>Language as a mode of communication always occurs as a discourse in which a sentence or elements within a sentence can have a connection with the previous and following sentence. This ensures cohesion and coherence in the discource. We annotate the following discourse information in this row:</p>
             <ul>
                 <li><b>Discourse Connective Relation:</b> In the next section, we discuss how we annotate intra-sentential discourse relation. See here for the list of discourse connective relation or sangati relation decided so far.</li>
                 <li><b>Pronominal coreference:</b> A discourse strategy to indicate two entities within a sentence or across sentences having the same referent.</li>
             </ul>
             <p>When the antecedent of a pronoun is the whole situation and not just a noun, that pronominal expression is treated as a connective and its annotation is discussed below:</p>
-            <p id="karyakarana-discourse-connectove-relation">kAryakAraNa Discourse Connective Relation</p>
+            <h5 class="text-info" id="karyakarana-discourse-connectove-relation">kAryakAraNa Discourse Connective Relation</h5>
             <p>As discussed in Sentence Simplification section, complex sentences are split into simple sentences. However, in USR we capture the connection of the split sentences in terms of some Discourse Connective Tag. This tag ensures that even after the split of a complex sentence into simple sentences, the connective information is not lost. Here is the strategy for <b>discourse connective annotation:</b></p>
             <p><b>Case 1:</b> Originally the segmented sentences are connected through a single connective:</p>
             <ul>
@@ -2492,7 +2491,7 @@
                     <td>Sent_4c.3:samuccaya</td>
                 </tr>
             </table>
-            <p id="pronominal-coreference">Pronominal coreference</p>
+            <h5 class="text-info" id="pronominal-coreference">Pronominal coreference</h5>
             <p>For anaphoric expression, the discourse element uses co-ref tag and also specify the index ID of the noun it corefers. The index ID of the antecedent is written as Sent_ID.Concept_Index as shown below</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 31. Representation of Coreference in USR</caption>
@@ -2551,7 +2550,7 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="row-8">Row 8: Speaker's view</p>
+            <h5 class="text-info" id="row-8">Row 8: Speaker's view</h5>
             <p>Speaker's view refers to the perspective of the speaker that is conveyed in the discourse through various linguistic expressions. These expressions present extra-propositional information. This row is designed in a way, where other rows, specifically concept row alone is not sufficient to capture this information or these information are not represented in concept row, such information, are captured in speaker's view row. In this document, we are reporting some cases that we have come across in the languages which we have studied so far, namely Hindi, Bangla, English, Tamil:</p>
             <ol type="a">
                 <li>Discourse Particles</li>
@@ -2642,7 +2641,7 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="proximal-and-distal-information">Proximal and Distal Information for wyax</p>
+            <h5 class="text-info" id="proximal-and-distal-information">Proximal and Distal Information for wyax</h5>
             <p>The concept row represents the concept of wyax</p>
             <ul>
                 <li>Proximal is marked for yaha</li>
@@ -2719,9 +2718,9 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="row-9">Row 9: Scope</p>
+            <h5 class="text-info" id="row-9">Row 9: Scope</h5>
             <p>In development</p>
-            <p id="row-10">Row 10: Sentence Types</p>
+            <h5 class="text-info" id="row-10">Row 10: Sentence Types</h5>
             <p>Even though USRs represent the speaker's vivakṣā, we have decided to maintain the type of the target sentence for ease of generation. Sentence type is declared in the 10th row.<br>Examples of sentence types:</p>
             <table class="table table-bordered table-sm">
                 <caption>Table 35. Sentence Type</caption>
@@ -2782,7 +2781,7 @@
                     <td>#nadiyoṃ tathā himakhaṃḍoṃ ke phalasvarūpa tāje jala kī āpūrti|<br>When the sentence occurs as a point and incomplete sentence</td>
                 </tr>
             </table>
-            <p id="row-11">Row 11: Construction</p>
+            <h5 class="text-info" id="row-11">Row 11: Construction</h5>
             <p>USR treats semantic frames that are linguistically expressed larger-than-lexical-but-smaller-than-sentential expressions as Constructions. They are represented as the value of the Construction feature in USR.</p>
             <p>The conceptual schema of the constructions:</p>
             <ol type="a">
@@ -2954,8 +2953,8 @@
                     <td colspan="4">conj:[1,2]</td>
                 </tr>
             </table>
-            <p id="phenomena">Phenomena</p>
-            <p id="spatio-directional-terms">Spatio-directional Terms</p>
+            <h5 class="text-info" id="phenomena">Phenomena</h5>
+            <h5 class="text-info" id="spatio-directional-terms">Spatio-directional Terms</h5>
             <p>In some languages, namely, Hindi, Bangla and other Indic languages, spatio-directional terms exhibit three roles: (a) nominal, (b) relational and (c) modificational.</p>
             <ol type="A">
                 <li><b>Nominal use:</b> When the spatio-directional term denotes a place.</li>
@@ -3046,7 +3045,7 @@
                     <td>0:main</td>
                 </tr>
             </table>
-            <p id="measuring-terms">Measuring Terms</p>
+            <h5 class="text-info" id="measuring-terms">Measuring Terms</h5>
             <p>A measuring unit is a standard quantity used to express a physical quantity. These kinds of entities specify a measurement unit, a percentage, ratio, quantity, and capacity. USR proposes following decision regarding annotation of measuring units in different layer</p>
             <ul>
                 <li>Measuring unit is represented as a compound with the number in the concept row. Such as- 2+liṭara_1</li>
@@ -3095,7 +3094,7 @@
                     <td colspan="5">meas:[3.1:count,3.2:unit]</td>
                 </tr>
             </table>
-            <p id="demonstrative">Demonstrative</p>
+            <h5 class="text-info" id="demonstrative">Demonstrative</h5>
             <p>A demonstrative pronoun is a pronoun that is used for 'pointing out the one referred to and distinguishing it from others of the same class'[Mirriam-webster]. The term 'demonstrative' has been used by Diessel (1999), as pronouns or noun modifiers (the 'this/that' kind) along with locational and temporal adverbs (the 'here/there', 'now/then' kind). Deixis is considered as one of the inherent semantic properties of demonstratives.</p>
             <p>Demonstrative gets 'wyax' as a concept, and is tagged as 'dem' in dependency row. The proximal and distal information is encoded in the speaker's view row.</p>
             <table class="table table-bordered table-sm">
@@ -3158,7 +3157,7 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="interrogative">Interrogative</p>
+            <h5 class="text-info" id="interrogative">Interrogative</h5>
             <p>kim is a root form for all interrogative words in Sanskrit. Wh-questions are treated as variables and are represented as an abstract term kim in USR. We use kim as a concept that represents a substitutable_desired_entity. See here for Hindi interrogative pronoun list.</p>
             <p>For Yes/No questions, kim does not appear in the concept row. The sentence-type row declares yn_interrogative specifies the sentence-type as a yes/no interrogative sentence.</p>
             <p>Consider a sentence-rāma kisase ḍarate haiṃ 'who is Ram afraid of' which may have different possible answers, such as- i. Ram is afraid of some person or animal, ii. Ram is afraid of some non-animate entity, like- fire or water, and iii. Ram is afraid of some possible incident or event, like- failure in examination.</p>
@@ -3265,7 +3264,7 @@
                     <td>0:main</td>
                 </tr>
             </table>
-            <p id="light-verbs">Light verbs</p>
+            <h5 class="text-info" id="light-verbs">Light verbs</h5>
             <p>In Verb-Verb complex predicates, light verbs carry that part of the information which 'have a depleted semantic contribution to the event described' (Jespersen 1965). The semantic contribution of light verbs, i.e., volitionality, intentionality etc. is captured in the Speaker's view row by adding as the shade of meaning. Thus, USR does not represent the light verb as a concept in concept row. The string of light verbs are represented in the speaker's view row, as [shade: the string of light verbs with appropriate concept ID] as shown below-</p>
             <table class="table table-bordered table-sm">
                 <caption>The expected outcome of this given USR is- #ramaṇa ne sārī miṭhāī khā lī.</caption>
@@ -3299,7 +3298,7 @@
                 </tr>
             </table>
             <p><b>Note: </b>Verbs which cannot be used as a main verb, will not be considered as 'light' verbs, such as-cUkA.</p>
-            <p id="complement-clause">Complement Clause</p>
+            <h5 class="text-info" id="complement-clause">Complement Clause</h5>
             <p>In USR, we consider the finite verb as head of the sentence and mark it as 0:main. If the sentence is a complex one and there is a complement clause, then the sentence contains two finite verbs, i.e., one is the finite verb of the main clause and the other is the finite verb of the complement clause. In such cases, USR simplifies the complement clause by breaking it into two sentences.</p>
             <p>R1-ki (Rule1-ki):</p>
             <p>In Complement clauses, when the conjunction "ki" (that) is used, we split the sentence based on "ki." Additionally, we add the word 'yaha' before the verb of the sentence preceding "ki," which functions as the vākya_karma of that sentence. Simultaneously, we remove "ki" from the simplified sentences.</p>
@@ -3405,7 +3404,7 @@
                     </tr>
                 </table>
             </div>
-            <p id="relative-clause">Relative Clause</p>
+            <h5 class="text-info" id="relative-clause">Relative Clause</h5>
             <p>Relative clauses serve the purpose of noun modification. Such as-</p>
             <p class="text-center">rāma, jo merā bhāī hai, saṃskṛta kā chātra hai..<br>'Ram, who is my brother, is a student of Sanskrit.'</p>
             <p>Here, the relative clause,i.e., who is my brother is modifying Ram, a noun.</p>
@@ -3888,8 +3887,8 @@
                     <td colspan="4">Sent_ID_3a.8:kAryakAraNa</td>
                 </tr>
             </table>
-            <p id="appendix-1">Appendix-1</p>
-            <p id="appendix-1">Devanagari-WX-Indic script mapping</p>
+            <h5 class="text-info" id="appendix-1">Appendix-1</h5>
+            <h5 class="text-info" id="appendix-1">Devanagari-WX-Indic script mapping</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <td>अ<br>a<br>a</td>
@@ -3962,8 +3961,8 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="appendix-2">Appendix-2</p>
-            <p id="concept-dictionary-entry-format">Concept Dictionary Entry Format</p>
+            <h5 class="text-info" id="appendix-2">Appendix-2</h5>
+            <h5 class="text-info" id="concept-dictionary-entry-format">Concept Dictionary Entry Format</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Sense_Label</th>
@@ -3996,8 +3995,8 @@
                     <td>बुरे काम बुरे फल देते हैं<br>bure kāma bure phala dete haiṃ<br>Bad deeds give bad results</td>
                 </tr>
             </table>
-            <p id="appendix-3">Appendix-3</p>
-            <p>Types of Noun Compound</p>
+            <h5 class="text-info" id="appendix-3">Appendix-3</h5>
+            <h5 class="text-info">Types of Noun Compound</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Types of Noun Compound</th>
@@ -4020,8 +4019,8 @@
                     <td>kalakattā(M)(ne)+ pulisa_1(H)</td>
                 </tr>
             </table>
-            <p id="appendix-4">Appendix-4</p>
-            <p>List of Hindi interrogative pronoun</p>
+            <h5 class="text-info" id="appendix-4">Appendix-4</h5>
+            <h5 class="text-info">List of Hindi interrogative pronoun</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <td>kyā</td>
@@ -4080,8 +4079,8 @@
                     <td>how much/ how many</td>
                 </tr>
             </table>
-            <p id="appendix-5">Appendix-5</p>
-            <p>Hindi TAM Dictionary</p>
+            <h5 class="text-info" id="appendix-5">Appendix-5</h5>
+            <h5 class="text-info">Hindi TAM Dictionary</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <td>wA_hE_1</td>
@@ -4339,8 +4338,8 @@
                     <td>परिवर्तन किए जाएँ</td>
                 </tr>
             </table>
-            <p id="appendix-6">Appendix-6</p>
-            <p>List of Spatio-directional terms in Hindi</p>
+            <h5 class="text-info" id="appendix-6">Appendix-6</h5>
+            <h5 class="text-info">List of Spatio-directional terms in Hindi</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Term</th>
@@ -4413,8 +4412,8 @@
                     <td>vaha dūra bhaviṣya dekha sakatā hai<br>'He can see the far future.'</td>
                 </tr>
             </table>
-            <p id="appendix-7">Appendix-7</p>
-            <p>List of Discourse Connectives</p>
+            <h5 class="text-info" id="appendix-7">Appendix-7</h5>
+            <h5 class="text-info">List of Discourse Connectives</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Name of discourse relation</th>
@@ -4564,8 +4563,8 @@
                     <td>When the following argument is a turn-taker, introducing a new subject or new information in the text/ conversation, we use this tag.</td>
                 </tr>
             </table>
-            <p id="appendix-8">Appendix-8</p>
-            <p>List of Hindi Discourse Particle and evaluative dimensions</p>
+            <h5 class="text-info" id="appendix-8">Appendix-8</h5>
+            <h5 class="text-info">List of Hindi Discourse Particle and evaluative dimensions</h5>
             <p class="font-weight-bold">भी</p>
             <ol type="1">
                 <li>समुच्चय(also):पूर्वोक्त किसी व्यक्ति, वस्तु आदि के साथ "वर्तमान" व्यक्ति, वस्तु आदि का भी संग्रह करना, in additive meaning</li>
@@ -5203,8 +5202,8 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="appendix-9">Appendix-9</p>
-            <p>List of shade or light verbs</p>
+            <h5 class="text-info" id="appendix-9">Appendix-9</h5>
+            <h5 class="text-info">List of shade or light verbs</h5>
             <table class="table table-bordered table-sm">
                 <tr>
                     <th>Light verb</th>
@@ -5243,8 +5242,8 @@
                     <td></td>
                 </tr>
             </table>
-            <p id="appendix-10">Appendix-10</p>
-            <p>Construction frame in USR</p>
+            <h5 class="text-info" id="appendix-10">Appendix-10</h5>
+            <h5 class="text-info">Construction frame in USR</h5>
             <ul><li>Temporal Construction</li></ul>
             <table class="table table-bordered table-sm">
                 <tr>
@@ -5812,7 +5811,7 @@
             <p>viroXi cxn</p>
             <p><b>क्या आप संसाधन संपन्न परंतु आर्थिक रूप से पिछड़े और संसाधन विहीन परंतु आर्थिक रूप से विकसित प्रदेशों के नाम बता सकते हैं?</b></p>
             <p>Appendix-11</p>
-            <p id="sample-usr">Sample USR</p>
+            <h5 class="text-info" id="sample-usr">Sample USR</h5>
             <p>FAQs</p>
             <ul>
                 <li>Concepts with particles-how to treat some specific cases</li>
