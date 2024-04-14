@@ -8,20 +8,17 @@
     <style>
         .sidebar {
             position: fixed;
+            overflow-x: hidden;
             overflow-y: auto;
             height: 100%;
             width: 30%;
             z-index: 9;
-            padding-top: 60px;
-            background-color: #f2f2f2;
+            background-color: #fff;
+            padding: 50px 0 30px 0;
         }
         .sidebar.collapsed {
           width: 0;
           display: none;
-        }
-        .content {
-          margin-left: 250px;
-          padding: 20px;
         }
         #toggleSidebar {
           position: fixed;
@@ -33,11 +30,8 @@
 </head>
 <body style="overflow-x: hidden;" class="text-justify">
     <div class="row">
-        <button class="btn btn-primary" id="toggleSidebar">Toggle Sidebar</button>
         <div class="col-md-2">
-            <div class="sidebar" id="sidebar">
-                <div class="row" style="height: 20px;"></div>
-                <h3>Content</h3>
+            <div class="sidebar collapsed" id="sidebar">
                 <ul class="nav flex-column">
                     <li class="nav-item"><a class="nav-link" href="#motivation-of-usr">Motivation of USR</a></li>
                     <li class="nav-item"><a class="nav-link" href="#format-of-usr">Format of USR</a></li>
@@ -5872,6 +5866,7 @@
             <p><b># स्टेट ऑफ़ फ़ोरेस्ट रिपोर्ट(2015) के अनुसार वर्ष 2013 से सघन वनों के क्षेत्र में 3775 वर्ग किमी की वृद्धि हुई है।</b></p>
         </div>
         <div class="col-md-2">
+            <button class="btn btn-dark" id="toggleSidebar">Toggle Sidebar</button>
             <button id="top-btn" style="display: none; bottom: 40px; right: 40px;" class="btn btn-dark position-fixed">Go to top</button>
         </div>
     </div>
@@ -5898,10 +5893,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-        $('#toggleSidebar').click(function() {
-            $('#sidebar').toggleClass('collapsed');
-            $('#content').toggleClass('collapsed');
-        });
+            $('#toggleSidebar').click(function() {
+                $('#sidebar').toggleClass('collapsed');
+            });
         });
     </script>
 </body>
